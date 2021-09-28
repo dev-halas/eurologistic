@@ -1,0 +1,24 @@
+/* ------ RESET ------ */
+
+@import "./base/reset.scss";
+@import "./base/core.scss";
+
+/* ------ Layout ------ */
+
+@import "./layout/grid.scss";
+@import "./layout/header.scss";
+
+/* ------ Components ------ */
+
+@import "./components/slider.scss";
+@import "./components/about.scss";
+@import "./components/offer.scss";
+@import "./components/contact.scss";
+@import "./components/lclTransport.scss";
+@import "./components/fullTruck.scss";
+@import "./components/expressShipment.scss";
+
+
+
+@import "./base/animation.scss";
+@import "./layout/footer.scss";

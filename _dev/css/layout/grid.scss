@@ -1,0 +1,57 @@
+.container {
+    max-width: 85vw;
+    margin: auto;
+    position: relative;
+    width: 1670px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 15px;
+    position: relative;
+}
+
+.col-2 {
+    grid-column: span 2;
+    position: relative;
+}
+
+.col-4 {
+    grid-column: span 4;
+    position: relative;
+}
+
+.col-5 {
+    grid-column: span 5;
+    position: relative;
+}
+
+.col-6 {
+    grid-column: span 6;
+    position: relative;
+}
+
+.col-7 {
+    grid-column: span 7;
+    position: relative;
+}
+
+.col-8 {
+    grid-column: span 8;
+    position: relative;
+}
+
+@media only screen and (max-width: 1000px) {
+    .col-4,
+    .col-5,
+    .col-6,
+    .col-7 {
+        grid-column: span 12;
+    }
+
+    .col-2 {
+        grid-column: span 6;
+        position: relative;
+    }
+}

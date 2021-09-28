@@ -1,0 +1,127 @@
+.offer{
+    padding: 10vh 0;
+}
+
+.offerTop {
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.offerInner {
+    max-width: 70vw;
+    margin: auto;
+    background-color: $white;
+    border: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 5vh 0px;
+}
+
+.offerInner--col {
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 60px 10px;
+    border: 0;
+    border-right: 2px solid #f5f5f5;
+    background-clip: content-box;
+    box-shadow: inset 0 0 0 20px #fff;
+    transition: ease-in-out .3s;
+    -webkit-transition: ease-in-out .3s;
+    -moz-transition: ease-in-out .3s;
+    -ms-transition: ease-in-out .3s;
+    -o-transition: ease-in-out .3s;
+}
+
+.offerInner--col:last-child {
+    margin-right: 10px;
+    border: none;
+}
+
+.offerInner--col:hover {
+    background-clip: border-box;
+    background-color: $blue;
+    color: #fff;
+    transition: ease-in-out .3s;
+    -webkit-transition: ease-in-out .3s;
+    -moz-transition: ease-in-out .3s;
+    -ms-transition: ease-in-out .3s;
+    -o-transition: ease-in-out .3s;
+}
+
+.offerInner--col > svg {
+    width: auto;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+.offerInner--col > svg > path {
+    fill: $blue;
+}
+
+
+.offerInner--col:hover > svg > path {
+    fill: $white;
+}
+
+.offerInner--text {
+    max-width: 200px;
+    text-align: center;
+}
+
+.offerAbout--inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 10vh;
+    box-shadow: 0 15px 55px rgba(0,0,0,0.08);
+    -webkit-box-shadow: 0 15px 55px rgba(0,0,0,0.08);
+    -moz-box-shadow: 0 15px 55px rgba(0,0,0,0.08);
+    -o-box-shadow: 0 15px 55px rgba(0,0,0,0.08);
+
+}
+
+.offerAbout--innerImg {
+    min-height: 250px;
+}
+
+.offerAbout--innerImg, .offerAbout--innerText {
+    grid-column: span 1;
+}
+
+.offerAbout--innerText {
+    padding: 4vh 6vh;
+}
+
+@media only screen and (max-width: 1600px) {
+    .offerAbout--innerText {
+        padding: 4vh 6vh;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .offerTop {
+        margin: auto;
+        margin-bottom: 30px;
+        max-width: 60%;
+    }
+
+    .offerInner {
+        max-width: 100%;
+    }
+
+    .offerInner--col {
+        grid-column: span 3;
+        border: 0;
+        border-bottom: 2px solid #f5f5f5;
+    }
+
+    .offerAbout--innerImg, .offerAbout--innerText {
+        grid-column: span 4;
+    }
+    
+}

@@ -1,0 +1,56 @@
+.express {
+    max-width: 100%;
+    overflow-x: hidden;
+    padding: 10vh 0;
+}
+.expressLeft {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.expressTitle {
+    margin-bottom: 40px;
+}
+
+.expressText--first {
+    margin-bottom: 100px;
+    max-width: 650px;
+}
+
+.expressText--two {
+    justify-self: flex-end;
+}
+
+.expressImg--big {
+    max-width: 90%;
+    margin-left: 20%;
+}
+
+.expressFlags {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.expressFlag > img {
+    max-height: 80px;
+    width: auto;
+    margin: auto;
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .expressImg--big {
+        max-width: 120%;
+        margin-left: 0;
+    }
+
+    .expressFlag {
+        padding: 20px 30px;
+        flex: 1 1 50%;
+    }
+}

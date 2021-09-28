@@ -1,0 +1,192 @@
+.fadeInLeft, .fadeInRight, .fadeIn, .fadeInBottomLow, .fadeInBottom {
+    opacity: 0;
+}
+
+.animated .fadeIn, .animated.fadeIn{
+    animation: fadeIn 1s ease-in-out;
+    -webkit-animation: fadeIn 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(.8);
+        -webkit-transform: scale(.8);
+        -moz-transform: scale(.8);
+        -ms-transform: scale(.8);
+        -o-transform: scale(.8);
+}
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+}
+
+.animated .fadeInBottom, .animated.fadeInBottom{
+    animation: fadeInBottom 1.5s;
+    -webkit-animation: fadeInBottom 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+@keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+        -webkit-transform: translateY(100%);
+        -moz-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+        -o-transform: translateY(100%);
+}
+    to {
+        opacity: 1;
+    }
+}
+
+.animated .fadeInBottomLow, .animated.fadeInBottomLow{
+    animation: fadeInBottomLow 1s;
+    -webkit-animation: fadeInBottomLow 1s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+@keyframes fadeInBottomLow {
+    from {
+        opacity: 0;
+        transform: translateY(20%);
+        -webkit-transform: translateY(20%);
+        -moz-transform: translateY(20%);
+        -ms-transform: translateY(20%);
+        -o-transform: translateY(20%);
+}
+    to {
+        opacity: 1;
+    }
+}
+
+.animated .fadeInTop, .animated.fadeInTop {
+    animation: fadeInTop 1.5s;
+    -webkit-animation: fadeInTop 1.5s;
+    animation-fill-mode: both;
+}
+
+.animated .fadeInTopFast, .animated.fadeInTopFast  {
+    animation: fadeInTop .5s;
+    -webkit-animation: fadeInTop .5s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeInTop {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+        -moz-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        -o-transform: translateY(-100%);
+}
+    to {
+        opacity: 1;
+    }
+}
+
+.animated .fadeInTopLow, .animated.fadeInTopLow  {
+    animation: fadeInTopLow 1s;
+    -webkit-animation: fadeInTopLow 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeInTopLow {
+    from {
+        opacity: 0;
+        transform: translateY(-20%);
+        -webkit-transform: translateY(-20%);
+        -moz-transform: translateY(-20%);
+        -ms-transform: translateY(-20%);
+        -o-transform: translateY(-20%);
+}
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+.animated .fadeInLeft, .animated.fadeInLeft {
+    animation: fadeInLeft 1s ease-in-out;
+    -webkit-animation: fadeInLeft 1s ease-in-out;
+    animation-fill-mode: both;
+}
+
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-25%);
+        -webkit-transform: translateX(-25%);
+        -moz-transform: translateX(-25%);
+        -ms-transform: translateX(-25%);
+        -o-transform: translateX(-25%);
+}
+    to {
+        opacity: 1;
+    }
+}
+
+.animated .fadeInRight, .animated.fadeInRight {
+    animation: fadeInRight 1s ease-in-out;
+    -webkit-animation: fadeInRight 1s ease-in-out;
+    animation-fill-mode: both;
+}
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(25%);
+        -webkit-transform: translateX(25%);
+        -moz-transform: translateX(25%);
+        -ms-transform: translateX(25%);
+        -o-transform: translateX(25%);
+}
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+/* Animation Delays */
+
+.animate .d-200 {
+    animation-delay: .2s;
+}
+
+.animate .d-400 {
+    animation-delay: .4s;
+}
+
+.animate .d-600 {
+    animation-delay: .6s;
+}
+
+.animate .d-800 {
+    animation-delay: .8s;
+}
+
+.animate .d-1000 {
+    animation-delay: 1s;
+}
+
+.animate .d-1200 {
+    animation-delay: 1.2s;
+}
+
+
+
