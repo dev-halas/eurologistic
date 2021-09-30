@@ -1,9 +1,9 @@
 <section class="contact animate">
     <div class="contactInner">
-        <div class="contactLeft fadeInLeft" style="background: url(<?php echo esc_url(THEME_URL)?>_dev/img/contact-img.jpg;); background-size: 70%, 100%; background-repeat: no-repeat; ">
+        <div class="contactLeft" style="background: url(<?php echo esc_url(THEME_URL)?>_dev/img/contact-img.jpg;); background-size: 70%, 100%; background-repeat: no-repeat; ">
             <div class="contactBluebar"></div>
         </div>
-        <div class="contactRight fadeInRight">
+        <div class="contactRight">
             <div class="contactRight--text">
                 W przypadku jakichkolwiek pytań prosimy 
             </div>

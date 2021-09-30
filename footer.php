@@ -1,5 +1,5 @@
 </body>
-<footer class="footer">
+<footer class="footer" id="kontakt">
 	
 	<div class="footerInner">
 		<div class="footerColumn animate fadeInLeft">

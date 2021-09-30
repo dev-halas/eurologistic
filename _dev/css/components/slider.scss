@@ -111,8 +111,8 @@
     border: none;
     display: flex;
     opacity: 0;
-    animation: fadeOutSlide 1.5s ease-in-out;
-    -webkit-animation: fadeOutSlide 1.5s ease-in-out;
+    animation: fadeOutSlide 1.2s ease-in-out;
+    -webkit-animation: fadeOutSlide 1.2s ease-in-out;
 }
 
 .hero-slide:before {
@@ -127,8 +127,8 @@
     z-index: 2;
     display: flex;
     opacity: 1;
-    animation: fadeIn 1.5s ease-in-out;
-    -webkit-animation: fadeInSlide 1.5s ease-in-out;
+    animation: fadeInSlide 1.2s ease-in-out;
+    -webkit-animation: fadeInSlide 1.2s ease-in-out;
 }
 
 .slideInner {

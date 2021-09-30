@@ -19,6 +19,10 @@
 
 	<body <?php body_class()?>>
 
+		<div id="preload">
+			<div class="loader"></div>
+		</div>
+
 		<header class="header">
 			<nav class="navbar">
 				<a href="<?php echo esc_url(home_url('/')) ?>" class="navbarLogo">
@@ -60,3 +64,4 @@
 					</button>
 			</nav>
 		</header>
+

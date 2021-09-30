@@ -92,6 +92,7 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _css_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5);
 /* harmony import */ var _css_styles_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_styles_scss__WEBPACK_IMPORTED_MODULE_0__);
+__webpack_require__(6);
 __webpack_require__(1);
 __webpack_require__(2);
 __webpack_require__(3);
@@ -105,17 +106,28 @@ __webpack_require__(4);
 const navSlide = () => {
     const burger = document.querySelector('.hamburger');
     const header = document.querySelector('.header');
-    const navLink = document.querySelectorAll('a[href="#?"]');
-    const toggleClass = (el, className) => el.classList.toggle('sub-menu a');
 
-    console.log(
-        navLink
-    );
+    const navLinks = document.querySelectorAll('.menu-item:not(.menu-item-has-children)');
+
+    // you can use forEach here too
+    [].forEach.call(navLinks, link => {
+        link.addEventListener('click', btnClick, false)
+    })
+
+    function btnClick() {
+    // use Array function for lexical this
+    [].forEach.call(navLinks, link => {
+        // except for the element clicked, remove --active class
+        if (link !== header) link.classList.remove('--active');
+    });
+
+    // toggle active on the clicked button
+    header.classList.toggle('--active');
+    }
 
     burger.addEventListener('click', () => {
         header.classList.toggle('--active');
     });
-
 
 }
 
@@ -259,6 +271,19 @@ elements.forEach(element => observer.observe(element))
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports) {
+
+const preload = document.getElementById("preload"); 
+
+window.addEventListener("load", function(){
+    setTimeout(function(){
+        preload.style.transition = "all 1s ease-in-out";
+        preload.style.display = "none";
+    }, 2000)
+})
 
 /***/ })
 /******/ ]);

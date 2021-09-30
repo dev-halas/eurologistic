@@ -1,3 +1,4 @@
+require('./js/pagePreload');
 require('./js/header');
 require('./js/submenu');
 require('./js/slider');

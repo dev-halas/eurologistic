@@ -9,11 +9,9 @@ html {
 body {
     font-family: 'Bai Jamjuree', sans-serif;
     font-weight: 200;
-    line-height: 1.8;
     font-weight: Regular;
     font-size: 20px;
     color: #292929;
-    letter-spacing: 0em;
     line-height: 1.75;
 }
 
@@ -27,6 +25,13 @@ $dark: #292929;
 $blue: #0A61F6;
 $darkblue: #000168;
 $white: #fff;
+$pastell: #5996ff;
+$pastell1: #2e2f8e;
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
 h1 {
     font-size: 50px;

@@ -1,0 +1,103 @@
+#preload{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: $blue;
+    z-index: 9999;
+    animation: preload 1s ease-in-out;
+    -webkit-animation: preload 1s ease-in-out;
+    animation-fill-mode: both;
+    animation-delay: 1.5s;
+}
+
+@keyframes preload {
+    from {      
+    }
+    to {
+        opacity: .5;
+        transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+        -moz-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        -o-transform: translateY(-100%);
+    }
+}
+
+.loader  {
+  animation: rotate 2s infinite;
+  height: 100px;
+  width: 100px;
+  -webkit-animation: rotate 2s infinite;
+}
+
+.loader:before,
+.loader:after {   
+  border-radius: 50%;
+  content: '';
+  display: block;
+  height: 40px;  
+  width: 40px;
+}
+.loader:before {
+  animation: ball1 2s infinite;
+  background-color: $pastell;
+  box-shadow: 60px 0 0 $pastell1;
+  margin-bottom: 20px;
+  -webkit-animation: ball1 2s infinite;
+}
+.loader:after {
+  animation: ball2 2s infinite;
+  background-color: $pastell1;
+  box-shadow: 40px 0 0 $pastell;
+  -webkit-animation: ball2 2s infinite;
+}
+
+@keyframes rotate {
+  0% { 
+    -webkit-transform: rotate(0deg) scale(0.8); 
+    -moz-transform: rotate(0deg) scale(0.8);
+  }
+  50% { 
+    -webkit-transform: rotate(360deg) scale(1.2); 
+    -moz-transform: rotate(360deg) scale(1.2);
+  }
+  100% { 
+    -webkit-transform: rotate(720deg) scale(0.8); 
+    -moz-transform: rotate(720deg) scale(0.8);
+  }
+}
+
+@keyframes ball1 {
+  0% {
+    box-shadow: 60px 0 0 $pastell1;
+  }
+  50% {
+    box-shadow: 0 0 0 $pastell1;
+    margin-bottom: 0;
+    -webkit-transform: translate(15px,15px);
+    -moz-transform: translate(15px, 15px);
+  }
+  100% {
+    box-shadow: 60px 0 0 $pastell1;
+    margin-bottom: 20px;
+  }
+}
+
+@keyframes ball2 {
+  0% {
+    box-shadow: 60px 0 0 $pastell;
+  }
+  50% {
+    box-shadow: 0 0 0 $pastell;
+    margin-top: -40px;
+    -webkit-transform: translate(15px,15px);
+    -moz-transform: translate(15px, 15px);
+  }
+  100% {
+    box-shadow: 60px 0 0 $pastell;
+    margin-top: 0;
+  }
+}
