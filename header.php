@@ -20,7 +20,7 @@
 	<body <?php body_class()?>>
 
 		<div id="preload">
-			<div class="loader"></div>
+			<img src="<?php echo THEME_URL; ?>_dev/img/truck11.gif" alt="">
 		</div>
 
 		<header class="header">
